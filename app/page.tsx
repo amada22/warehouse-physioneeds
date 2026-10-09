@@ -37,7 +37,7 @@ export default function Home() {
     null
   );
 
-  const filteredProducts = useMemo(() => {
+  const filteblueProducts = useMemo(() => {
     const query = search.trim().toLowerCase();
 
     if (!query) return [];
@@ -85,14 +85,14 @@ export default function Home() {
         onClick={() => chooseArea(area)}
         className={`flex min-h-24 flex-col items-center justify-center rounded-lg border-2 p-3 text-center transition ${
           active
-            ? "border-red-600 bg-red-600 text-white shadow-lg"
-            : "border-slate-300 bg-white text-slate-800 hover:border-red-400 hover:bg-red-50"
+            ? "border-blue-600 bg-blue-600 text-white shadow-lg"
+            : "border-slate-300 bg-white text-slate-800 hover:border-blue-400 hover:bg-blue-50"
         } ${extraClass}`}
       >
         <span className="text-2xl font-extrabold">{area}</span>
         <span
           className={`mt-1 text-xs ${
-            active ? "text-red-100" : "text-slate-500"
+            active ? "text-blue-100" : "text-slate-500"
           }`}
         >
           {count} products
@@ -130,7 +130,7 @@ export default function Home() {
 
           <div className="col-span-2 rounded-xl bg-white p-5 shadow-sm md:col-span-1">
             <p className="text-sm text-slate-500">Selected area</p>
-            <p className="mt-1 text-3xl font-bold text-red-600">
+            <p className="mt-1 text-3xl font-bold text-blue-600">
               {selectedArea ?? "—"}
             </p>
           </div>
@@ -151,23 +151,23 @@ export default function Home() {
             value={search}
             onChange={(event) => setSearch(event.target.value)}
             placeholder="Enter product code, supplier code or description..."
-            className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-red-500 focus:ring-2 focus:ring-red-100"
+            className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
           />
 
           {search.trim() && (
             <div className="mt-4">
               <p className="mb-3 text-sm text-slate-500">
-                {filteredProducts.length} matching products shown
-                {filteredProducts.length === 100 ? " (maximum 100)" : ""}
+                {filteblueProducts.length} matching products shown
+                {filteblueProducts.length === 100 ? " (maximum 100)" : ""}
               </p>
 
-              {filteredProducts.length > 0 ? (
+              {filteblueProducts.length > 0 ? (
                 <div className="max-h-80 overflow-y-auto rounded-lg border border-slate-200">
-                  {filteredProducts.map((product, index) => (
+                  {filteblueProducts.map((product, index) => (
                     <button
                       key={`${safeText(product.Code)}-${index}`}
                       onClick={() => chooseProduct(product)}
-                      className="flex w-full items-center justify-between gap-4 border-b border-slate-100 p-4 text-left last:border-b-0 hover:bg-red-50"
+                      className="flex w-full items-center justify-between gap-4 border-b border-slate-100 p-4 text-left last:border-b-0 hover:bg-blue-50"
                     >
                       <div className="min-w-0">
                         <p className="font-semibold">
@@ -260,7 +260,7 @@ export default function Home() {
       Available area
     </div>
     <div className="flex items-center gap-2">
-      <span className="h-3 w-3 rounded-sm bg-red-600" />
+      <span className="h-3 w-3 rounded-sm bg-blue-600" />
       Selected area
     </div>
   </div>
@@ -272,7 +272,7 @@ export default function Home() {
               <>
                 <button
                   onClick={() => setSelectedProduct(null)}
-                  className="mb-4 text-sm font-semibold text-red-600 hover:underline"
+                  className="mb-4 text-sm font-semibold text-blue-600 hover:underline"
                 >
                   ← Back to area
                 </button>
@@ -310,7 +310,7 @@ export default function Home() {
 
                   <div className="mt-4">
                     <p className="text-sm text-slate-500">Warehouse area</p>
-                    <p className="mt-1 text-2xl font-extrabold text-red-600">
+                    <p className="mt-1 text-2xl font-extrabold text-blue-600">
                       {safeText(selectedProduct.area).trim().toUpperCase() ||
                         "X"}
                     </p>
@@ -329,7 +329,7 @@ export default function Home() {
                     </p>
                   </div>
 
-                  <span className="rounded-xl bg-red-50 px-4 py-3 text-2xl font-extrabold text-red-600">
+                  <span className="rounded-xl bg-blue-50 px-4 py-3 text-2xl font-extrabold text-blue-600">
                     {getAreaCount(selectedArea)}
                   </span>
                 </div>
@@ -340,7 +340,7 @@ export default function Home() {
                       <button
                         key={`${safeText(product.Code)}-${index}`}
                         onClick={() => chooseProduct(product)}
-                        className="w-full rounded-lg border border-slate-200 p-3 text-left transition hover:border-red-300 hover:bg-red-50"
+                        className="w-full rounded-lg border border-slate-200 p-3 text-left transition hover:border-blue-300 hover:bg-blue-50"
                       >
                         <p className="font-semibold">
                           {safeText(product.Code) || "No product code"}

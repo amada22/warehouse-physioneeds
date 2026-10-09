@@ -1264,42 +1264,42 @@
     "code of supplier": "WHS 02",
     "description": "Wall Bracket for Mats,type 105 ( 105 cm width)",
     "in stock qte": 1,
-    "area": "x"
+    "area": "k"
   },
   {
     "Code": "COL 694",
     "code of supplier": "091212075",
     "description": "Biofreeze 4oz/118ml Gel",
     "in stock qte": 3,
-    "area": "x"
+    "area": "k"
   },
   {
     "Code": "PEDO01",
     "code of supplier": "081564483",
     "description": "Lightweight pedometer",
     "in stock qte": 10,
-    "area": "x"
+    "area": "k"
   },
   {
     "Code": "4370.03",
     "code of supplier": null,
     "description": "Adjustable resistance Hand Grip 5-60kg",
     "in stock qte": 3,
-    "area": "x"
+    "area": "k"
   },
   {
     "Code": "PER 55",
     "code of supplier": null,
     "description": "Myotape Tape Body Measure",
     "in stock qte": 17,
-    "area": "x"
+    "area": "k"
   },
   {
     "Code": "ODOX2",
     "code of supplier": "091212075",
     "description": "Wall Mounted Rack For Gym Ball",
     "in stock qte": 1,
-    "area": "x"
+    "area": "k"
   },
   {
     "Code": "BRSS01",
@@ -1411,42 +1411,42 @@
     "code of supplier": null,
     "description": "Carbonlite AFO Med Right (FP 28cm,H 29cm)",
     "in stock qte": 9,
-    "area": "x"
+    "area": "D"
   },
   {
     "Code": "AFO-CL-ML",
     "code of supplier": null,
     "description": "Carbonlite AFO Med Left  (FP 28cm,H 29cm)",
     "in stock qte": 3,
-    "area": "x"
+    "area": "D"
   },
   {
     "Code": "AFO-CL-SL",
     "code of supplier": null,
     "description": "Carbonlite AFO Sml Left (FP 24cm,H 26cm)",
     "in stock qte": 9,
-    "area": "x"
+    "area": "D"
   },
   {
     "Code": "AFO-CL-SR",
     "code of supplier": null,
     "description": "Carbonlite AFO Sml Right (FP 24cm,H 26cm)",
     "in stock qte": 8,
-    "area": "x"
+    "area": "D"
   },
   {
     "Code": "AFO-CL-LR",
     "code of supplier": null,
     "description": "Carbonlite AFO Lge Right (FP 28cm,H 33cm)",
     "in stock qte": 9,
-    "area": "x"
+    "area": "D"
   },
   {
     "Code": "AFO-CL-LL",
     "code of supplier": null,
     "description": "Carbonlite AFO Lge Left (FP 28cm,H 33cm)",
     "in stock qte": 7,
-    "area": "x"
+    "area": "D"
   },
   {
     "Code": "AFO-CL-XLR",
@@ -1544,77 +1544,77 @@
     "code of supplier": "091253707",
     "description": "Pelvic Floor Trainer-Bladder Control ",
     "in stock qte": 1,
-    "area": "x"
+    "area": "F"
   },
   {
     "Code": "BAM562/5",
     "code of supplier": "SIZE 38",
     "description": "Bama Futura 562 insole, size 5",
     "in stock qte": 15,
-    "area": "x"
+    "area": "F"
   },
   {
     "Code": "BAM562/6",
     "code of supplier": "SIZE 39",
     "description": "Bama Futura 562 insole, size 6",
     "in stock qte": 11,
-    "area": "x"
+    "area": "F"
   },
   {
     "Code": "BAM562/7",
     "code of supplier": null,
     "description": "Bama Futura 562 insole, size 7",
     "in stock qte": 9,
-    "area": "x"
+    "area": "F"
   },
   {
     "Code": "BAM562/8",
     "code of supplier": "SIZE 42",
     "description": "Bama Futura 562 insole, size 8",
     "in stock qte": 3,
-    "area": "x"
+    "area": "F"
   },
   {
     "Code": "BAM562/9",
     "code of supplier": "SIZE 43",
     "description": "Bama Futura 562 insole, size 9",
     "in stock qte": 7,
-    "area": "x"
+    "area": "F"
   },
   {
     "Code": "BAM562/10",
     "code of supplier": "SIZE 44",
     "description": "Bama Futura 562 insole, size 10",
     "in stock qte": 9,
-    "area": "x"
+    "area": "F"
   },
   {
     "Code": "BAM562/11",
     "code of supplier": "SIZE 45",
     "description": "Bama Futura 562 insole, size 11",
     "in stock qte": 3,
-    "area": "x"
+    "area": "F"
   },
   {
     "Code": "BAM562/12",
     "code of supplier": null,
     "description": "Bama Futura 562 insole, size 12",
     "in stock qte": 5,
-    "area": "x"
+    "area": "F"
   },
   {
     "Code": "BCBWUK6",
     "code of supplier": null,
     "description": "Bama Comfort Brilliant  FULL LENGTH WUK6",
     "in stock qte": 2,
-    "area": "x"
+    "area": "F"
   },
   {
     "Code": "BAMFL/6",
     "code of supplier": null,
     "description": "Bama Primus Full Length insole, size 6",
     "in stock qte": 3,
-    "area": "x"
+    "area": "F"
   },
   {
     "Code": "BAMFL/5",
@@ -1915,28 +1915,28 @@
     "code of supplier": null,
     "description": "Dasco Leather FootBed Insoles",
     "in stock qte": 11,
-    "area": "x"
+    "area": "I"
   },
   {
     "Code": "A61091 M10",
     "code of supplier": null,
     "description": "Dasco Leather FootBed Insoles",
     "in stock qte": 10,
-    "area": "x"
+    "area": "I"
   },
   {
     "Code": "A61091 M11",
     "code of supplier": null,
     "description": "Dasco Leather FootBed Insoles",
     "in stock qte": 2,
-    "area": "x"
+    "area": "I"
   },
   {
     "Code": "MEF 85  ",
     "code of supplier": null,
     "description": "10\" Paper Roll, 40mtr. 2 ply   EC7718 (1 Roll)",
     "in stock qte": 163,
-    "area": "x"
+    "area": "I"
   },
   {
     "Code": "TRO 95",
