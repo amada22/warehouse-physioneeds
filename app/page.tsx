@@ -202,17 +202,19 @@ export default function Home() {
 
         {/* Main content */}
         <div className="grid items-start gap-6 lg:grid-cols-[1.6fr_1fr]">
-          {/* Warehouse layout */}
-<section className="rounded-2xl bg-white p-5 shadow-sm">
-  <div className="mb-5">
+     
+{/* Warehouse layout */}
+<section className="min-w-0 rounded-2xl bg-white p-3 shadow-sm sm:p-5">
+  <div className="mb-4">
     <h2 className="text-xl font-bold">Warehouse layout</h2>
     <p className="mt-1 text-sm text-slate-500">
       Select an area to view its products.
     </p>
   </div>
 
-  <div className="overflow-x-auto">
-    <div className="min-w-[680px] rounded-2xl border-2 border-slate-300 bg-slate-200 p-3 shadow-inner">
+  {/* Desktop layout */}
+  <div className="hidden overflow-x-auto sm:block">
+    <div className="min-w-[600px] rounded-2xl border-2 border-slate-300 bg-slate-200 p-3 shadow-inner">
       {/* Top row */}
       <div className="grid grid-cols-5 gap-2">
         {["B", "C", "D", "H", "J"].map((area) =>
@@ -221,7 +223,7 @@ export default function Home() {
       </div>
 
       {/* Main warehouse floor */}
-      <div className="my-3 grid grid-cols-[90px_1fr_90px] gap-3">
+      <div className="my-3 grid grid-cols-[80px_1fr_80px] gap-3">
         {/* Left side */}
         <div className="flex flex-col justify-around gap-3 rounded-lg bg-slate-300 p-2">
           {["K", "F"].map((area) =>
@@ -229,32 +231,63 @@ export default function Home() {
           )}
         </div>
 
-        {/* Central shelves and aisles */}
-        <div className="rounded-lg border border-slate-300 bg-slate-100 p-4">
-          <div className="grid grid-cols-4 gap-4">
+        {/* Central shelves */}
+        <div className="rounded-lg border border-slate-300 bg-slate-100 p-3">
+          <div className="grid grid-cols-4 gap-3">
             {["I", "G", "E", "A"].map((area) =>
-              areaButton(
-                area,
-                "min-h-[320px] rounded-md shadow-md"
-              )
+              areaButton(area, "min-h-[300px] rounded-md shadow-md")
             )}
           </div>
         </div>
 
         {/* Right side */}
         <div className="flex flex-col justify-around gap-3 rounded-lg bg-slate-300 p-2">
-          {["X"].map((area) =>
-            areaButton(area, "min-h-20 rounded-md shadow-sm")
-          )}
+          {areaButton("X", "min-h-20 rounded-md shadow-sm")}
         </div>
       </div>
-
-      {/* Bottom row */}
-      
     </div>
   </div>
 
-  <div className="mt-4 flex flex-wrap gap-4 text-xs text-slate-500">
+  {/* Mobile layout */}
+  <div className="sm:hidden">
+    <div className="rounded-xl border-2 border-slate-300 bg-slate-200 p-2">
+      {/* Top shelves */}
+      <div className="grid grid-cols-3 gap-2">
+        {["B", "C", "D"].map((area) =>
+          areaButton(area, "min-h-16 rounded-md px-1 py-2 shadow-sm")
+        )}
+      </div>
+
+      <div className="my-2 grid grid-cols-2 gap-2">
+        {["H", "J"].map((area) =>
+          areaButton(area, "min-h-14 rounded-md px-1 py-2 shadow-sm")
+        )}
+      </div>
+
+      {/* Side areas and central shelves */}
+      <div className="grid grid-cols-[minmax(0,0.65fr)_minmax(0,2fr)] gap-2">
+        <div className="flex flex-col justify-around gap-2 rounded-lg bg-slate-300 p-2">
+          {["K", "F", "X"].map((area) =>
+            areaButton(area, "min-h-20 rounded-md px-1 py-2 shadow-sm")
+          )}
+        </div>
+
+        <div className="rounded-lg border border-slate-300 bg-slate-100 p-2">
+          <div className="grid grid-cols-2 gap-2">
+            {["I", "G", "E", "A"].map((area) =>
+              areaButton(
+                area,
+                "min-h-28 rounded-md px-1 py-3 shadow-sm"
+              )
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Legend */}
+  <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-xs text-slate-500">
     <div className="flex items-center gap-2">
       <span className="h-3 w-3 rounded-sm border border-slate-300 bg-white" />
       Available area
@@ -265,6 +298,8 @@ export default function Home() {
     </div>
   </div>
 </section>
+
+
 
           {/* Area details */}
           <section className="rounded-2xl bg-white p-5 shadow-sm">
